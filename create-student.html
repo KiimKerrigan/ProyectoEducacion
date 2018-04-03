@@ -1,0 +1,38 @@
+<html>
+<head>
+    <title>Create-student</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css">
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="bootstrap-3.3.7-dist/js/bootstrap.js" charset="utf-8"></script>
+<script src="js/create-student.js" charset="utf-8"></script>
+    </head>
+<h1 align="center" style="color: #5e9ca0;">Enter Student Details&nbsp;</h1>
+</br>
+
+<p align="center">Name*:&nbsp; <input id="name" name="name" pattern="^[a-zA-Z]*$"/></p>
+<form  align="center" onsubmit="on_submit(); return false;">
+
+        <p>Class*:&nbsp;
+        <select class="btn btn-primary dropdown-toggle" id="class" name="class"  onchange="professionSelected(this)">
+            <option value="">Please Select Class</option>
+            <option value="I">I</option>
+            <option value="II">II</option>
+            <option value="III">III</option>
+            <option value="V">V</option>
+            <option value="VI">VI</option>
+            <option value="VII">VII</option>
+            <option value="VIII">VIII</option>
+            <option value="IX">IX</option>
+            <option value="X">X</option>
+        </select>
+        </p>
+    <p>Roll No*:&nbsp; <input id="roll-number" name="rollNumber" pattern="^[0-9]*$"/></p>
+    <p>Gender*:&nbsp;
+    <label class="radio-inline"><input type="radio" name="gender" value="Female" >Female</label>
+    <label class="radio-inline"><input type="radio" name="gender" value="Male" >Male</label>
+    <label class="radio-inline"><input type="radio"  name="gender" value="Others">Others</label></p>
+<input type='reset'  class="btn btn-info"  value ='clear'> <input type='submit' class="btn btn-primary" value ='submit'>
+
+</form>
+</html>
