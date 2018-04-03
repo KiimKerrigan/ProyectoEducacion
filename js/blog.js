@@ -10,10 +10,10 @@ function validate() {
   var name = $("#name").val();
   var age = $("#age").val();
   var age = $("#age").val();
-  if (age >81)
-  {
-  alert("Age should be less than 80");
-  return false;
+  
+  if (age >81){
+    alert("La edad debe ser menos de 80");
+    return false;
   }
   var experience = $('input[name=experience]:checked').val();
   var blogArea = $("#blogArea").val();

@@ -7,7 +7,7 @@ function on_submit(){
     if(student.name && student.rollNumber)
         addStudentToStorage(student);
     else
-        alert('Please fill all the details')
+        alert('Por favor, rellena todos los detalles')
 }
 
 function addStudentToStorage(student){

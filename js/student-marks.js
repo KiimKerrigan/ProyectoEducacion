@@ -1,6 +1,6 @@
 function calculate() {
 
-    var total = parseInt(marks['telugu-marks'].value) + parseInt(marks['hindi-marks'].value) + parseInt(marks['hindi-marks'].value) + parseInt(marks['english-marks'].value) + parseInt(marks['social-marks'].value) + parseInt(marks['science-marks'].value);
+    var total = parseInt(marks['lenguaje-marks'].value) + parseInt(marks['quimica-marks'].value) + parseInt(marks['sociales-marks'].value) + parseInt(marks['matematicas-marks'].value) + parseInt(marks['ciencia-marks'].value) + parseInt(marks['filosofia-marks'].value);
 
     document.querySelector('#total-marks').innerHTML = total + '';
     document.querySelector('#percentage').innerHTML = total / 5.99 + '';

@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Student-marks</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css">
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
@@ -11,61 +12,61 @@
 
 
     <p></p>
-<h1 style="color: #5e9ca0;" align="center">Enter Student Marks</h1>
-<p align="center" style="color: #5e5ede;">Name: <span id="name"></span></p>
-<p align="center" style="color: #5e5ede;">Class: <span id="class"></span></p>
-<p align="center" style="color: #5e5ede;">Roll No: <span id="roll-number"></span></p>
-<p align="center" style="color: #5e5ede;">Gender: <span id="gender"></span></p>
+<h1 style="color: #5e9ca0;" align="center">Introduce Nota del estudiante</h1>
+<p align="center" style="color: #5e5ede;">Nombre: <span id="name"></span></p>
+<p align="center" style="color: #5e5ede;">Clase: <span id="class"></span></p>
+<p align="center" style="color: #5e5ede;">Rol Nº: <span id="roll-number"></span></p>
+<p align="center" style="color: #5e5ede;">Sexo: <span id="gender"></span></p>
     <form name="marks" action="student-details.html">
     <table class="table">
     <tbody>
     <tr>
-        <td>Subject</td>
-        <td>Maximum Marks</td>
-        <td>Accquired marks</td>
+        <td>Asignatura</td>
+        <td>Máximo Notas</td>
+        <td>Notas obtenidas</td>
     </tr>
     <tr>
-        <td>Telugu</td>
+        <td>Lenguaje</td>
         <td>100</td>
-        <td><input name="telugu-marks" pattern="^(100|[0-9]|[0-9][0-9])$" placeholder="Enter Marks" onchange="calculate()"/></td>
+        <td><input name="lenguaje-marks" pattern="^(100|[0-9]|[0-9][0-9])$" placeholder="Introduce nota" onchange="calculate()"/></td>
     </tr>
     <tr>
-        <td>Hindi</td>
+        <td>Química</td>
         <td>100</td>
-        <td><input name="hindi-marks" pattern="^(75|[0-9]|[0-9][0-9])$"  placeholder="Enter Marks" onchange="calculate()"/></td>
+        <td><input name="quimica-marks" pattern="^(75|[0-9]|[0-9][0-9])$"  placeholder="Introduce nota" onchange="calculate()"/></td>
     </tr>
     <tr>
-        <td>English</td>
+        <td>Sociales</td>
         <td>100</td>
-        <td><input name="english-marks" pattern="^(1000|[0-9]|[0-9][0-9]|[0-9][0-9][0-9])$" placeholder="Enter Marks" onchange="calculate()"/></td>
+        <td><input name="sociales-marks" pattern="^(1000|[0-9]|[0-9][0-9]|[0-9][0-9][0-9])$" placeholder="Introduce nota" onchange="calculate()"/></td>
     </tr>
     <tr>
-        <td>Maths</td>
+        <td>Matemáticas</td>
         <td>100</td>
-        <td><input name="maths-marks" pattern="^(100|[0-9]|[0-9][0-9])$" placeholder="Enter Marks" onchange="calculate()"/></td>
+        <td><input name="matematicas-marks" pattern="^(100|[0-9]|[0-9][0-9])$" placeholder="Introduce nota" onchange="calculate()"/></td>
     </tr>
     <tr>
-        <td>Science</td>
+        <td>Ciencia</td>
         <td>100</td>
-        <td><input name="science-marks" placeholder="Enter Marks" onchange="calculate()"/></td>
+        <td><input name="ciencia-marks" placeholder="Introduce nota" onchange="calculate()"/></td>
     </tr>
     <tr>
-        <td>Social Studies</td>
+        <td>Filosofía</td>
         <td>100</td>
-        <td><input name="social-marks" pattern="^(100|[0-9]|[0-9][0-9])$"  placeholder="Enter Marks" onchange="calculate()"/></td>
+        <td><input name="filosofia-marks" pattern="^(100|[0-9]|[0-9][0-9])$"  placeholder="Introduce nota" onchange="calculate()"/></td>
     </tr>
     <tr>
-        <td>Total marks</td>
+        <td>Nota total</td>
         <td>600</td>.
         <td id="total-marks"></td>
     </tr>
     <tr>
-        <td>Percentage</td>
+        <td>Porcentaje</td>
         <td>100</td>
         <td id="percentage"></td>
     </tr>
     </tbody>
 </table>
-<p align="center"><input type="reset" class="btn btn-info" value="clear" /> <input type="submit" class="btn btn-primary" value="submit" /></p>
+<p align="center"><input type="reset" class="btn btn-info" value="Limpiar" /> <input type="submit" class="btn btn-primary" value="Enviar" /></p>
 </form>
 </html>

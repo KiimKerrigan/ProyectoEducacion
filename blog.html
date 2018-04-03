@@ -1,6 +1,7 @@
 <html>
   <head>
     <title>Blog</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css">
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
@@ -33,20 +34,20 @@
     <div class="profile container-fluid">
       <div class="col-md-3 col-md-offset-9 col-sm-3 col-sm-offset-9 col-xs-6 col-xs-offset-6">
         <a href="blogs.html" class="btn btn-sm btn-info">Blogs</a>
-        <button id="logout" class="btn btn-sm btn-warning">Logout</button>
+        <button id="logout" class="btn btn-sm btn-warning">Salir</button>
       </div>
       <div class="row">
         <form class="col-md-6 col-md-offset-3" onsubmit="return validate();" onreset="resetting();">
           <div class="">
             <h1 class="text-center text-info">Blog</h1>
-            <label for="name">Name: </label>
-            <input type="text" id="name" class="form-control" placeholder="FirstName LastName"/>
+            <label for="name">Nombre: </label>
+            <input type="text" id="name" class="form-control" placeholder="Nombre y Apellidos"/>
             <br />
-            <label for="age">Age: (*age should be between 20 to 80)</label>
-            <input type="number" id="age"class="form-control" placeholder="20 to 80"/>
+            <label for="age">Edad: (*la edad debería estar entre 20 y 80)</label>
+            <input type="number" id="age"class="form-control" placeholder="20 y 80"/>
             <br />
             <div class="experience">
-              <label for="experience">Experience:</label>
+              <label for="experience">Experiencia:</label>
               <br>
               <label for="experience">0-3</label>
               <input type="radio" name="experience" value="0-3">
@@ -58,24 +59,24 @@
               <input type="radio" name="experience" value="15+">
             </div>
             <br />
-            <label for="blogarea">Blog Area (* 180 characters limit)</label>
-            <textarea name="blogarea" id="blogArea" rows="8" cols="40" class="form-control" placeholder="180 characters limit"></textarea>
+            <label for="blogarea">Area de Blog (* 180 caracteres máximo)</label>
+            <textarea name="blogarea" id="blogArea" rows="8" cols="40" class="form-control" placeholder="180 caracteres máximo"></textarea>
             <br>
             <div class="profession">
-              <h3 for="profession">Profession</h3>
+              <h3 for="profession">Profesión</h3>
               <select class="professionSel form-control" id="profession" name="profession" onchange="professionSelected(this)">
-                <option value="Engineer">Engineer</option>
+                <option value="Ingeniero">Ingeniero</option>
                 <option value="Doctor">Doctor</option>
-                <option value="Teacher">Teacher</option>
-                <option value="Business">Business</option>
-                <option value="other">other</option>
+                <option value="Profesor">Profesor</option>
+                <option value="Empresario">Empresario</option>
+                <option value="Otro">Otro</option>
               </select>
-              <input type="text" class="form-control" placeholder="Profession" name="otherProfession" id="otherProfession" value="" />
+              <input type="text" class="form-control" placeholder="Profesión" name="otherProfession" id="otherProfession" value="" />
             </div>
             <br>
             <div class="form-action">
-              <button type="reset" name="button" class="btn btn-warning">Reset</button>
-              <button type="submit" name="button" onclick= alert("You can check the submissons in the BLOGS Tab") class="btn btn-info">Save</button>
+              <button type="reset" name="button" class="btn btn-warning">Resetear</button>
+              <button type="submit" name="button" onclick= alert("You can check the submissons in the BLOGS Tab") class="btn btn-info">Guardar</button>
             </div>
           </div>
         </form>

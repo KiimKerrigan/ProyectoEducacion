@@ -8,7 +8,7 @@ function validate() {
   } else {
     var $errMsg = document.getElementById("errorMessage");
     $errMsg.style.display = "block";
-    $errMsg.innerHTML = "Wrong username or password!"
+    $errMsg.innerHTML = "¡Usuario o contraseña incorrecta!"
   }
 
   return false;
