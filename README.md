@@ -1,3 +1,3 @@
 # ProyectoEducacion
 
-https://github.com/KiimKerrigan/ProyectoEducacion
+https://kiimkerrigan.github.io/ProyectoEducacion/
